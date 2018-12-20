@@ -21,8 +21,6 @@ Usage
 ```
 <?php
 
-<?php
-
 namespace Module\Example;
 
 use Module\Support\Trait\ParameterManager as PM;
