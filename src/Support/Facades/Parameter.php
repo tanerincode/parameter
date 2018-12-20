@@ -1,8 +1,8 @@
 <?php
 
-namespace Parameter\Support\Facades;
+namespace TanerInCode\Parameter\Support\Facades;
 
-use Parameter\Parameter as MainClass;
+use TanerInCode\Parameter\Parameter as MainClass;
 use Illuminate\Support\Facades\Facade;
 
 class Parameter extends Facade

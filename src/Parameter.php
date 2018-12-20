@@ -1,6 +1,6 @@
 <?php
 
-namespace Parameter;
+namespace TanerInCode\Parameter;
 
 class Parameter
 {
