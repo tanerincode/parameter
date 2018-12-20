@@ -14,7 +14,7 @@ If you are Laravel version 5.0 - 5.4, add the service provider to config/app.php
 ...
 'providers' => [
     ...
-    TanerInCode\Parameter\Providers\ParameterServiceProvider::class,
+    tanerincode\Parameter\Providers\ParameterServiceProvider::class,
     ...
 ],
 ...
@@ -25,7 +25,7 @@ If you are Laravel version 5.0 - 5.4, add the service provider to config/app.php
 ```
 namespace Module\Example;
 
-use TanerInCode\Parameter\Parameter;
+use tanerincode\Parameter\Parameter;
 use Illuminate\Http\Request;
 
 class Example {
