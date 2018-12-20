@@ -1,6 +1,12 @@
 ## Parameter Manager for Laravel 5.x
 Easy to use, parameter manager, for your Laravel classes.
 
+### Installation
+Go to your project's root folder and run the composer require command.
+```
+$ cd projects/project
+$ composer require tanerincode/parameter
+```
 If you are on Laravel 5.5, the package will automatically be loaded into the framework.
 
 If you are Laravel version 5.0 - 5.4, add the service provider to config/app.php file:
@@ -14,7 +20,7 @@ If you are Laravel version 5.0 - 5.4, add the service provider to config/app.php
 ...
 ```
 
-## Usage
+### Usage
 
 ```
 namespace Module\Example;
