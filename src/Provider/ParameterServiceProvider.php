@@ -1,8 +1,9 @@
 <?php
 
-namespace TanerInCode\Providers;
+namespace Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Parameter\Support\Facades\Parameter;
 
 class ParameterServiceProvider extends ServiceProvider
 {
@@ -26,7 +27,7 @@ class ParameterServiceProvider extends ServiceProvider
       $this->app->singleton(
             'TanerInCode\Parameter\Parameter',
             function () {
-                  return new \TanerInCode\Parameter\Support\Facades\Parameter();
+                  return new Parameter();
             }
       );
   }
