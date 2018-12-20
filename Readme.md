@@ -14,32 +14,31 @@ If you are Laravel version 5.0 - 5.4, add the service provider to config/app.php
 ...
 ```
 
-Usage
+## Usage
 
 ```
 namespace Module\Example;
 
-use Module\Support\Trait\ParameterManager as PM;
+use TanerInCode\Parameter\Parameter;
 use Illuminate\Http\Request;
 
 class Example {
-  use PM;
 
   public function getFilter(Request $request){
 
     $this->clearArguments($request);
 
-    if($this->hasParamsIn('control')){
+    if(Parameter::hasParamsIn('control')){
 
-        $result = ExampleModel::where('type', $this->getParamsIn('type'))->first();
+        $result = ExampleModel::where('type', Parameter::getParamsIn('type'))->first();
 
-        if( $result['example'] == $this->getParamsIn('example.item.child') )
-        { return $this->getParamsInOnly(['name', 'colm.example']); }
+        if( $result['example'] == Parameter::getParamsIn('example.item.child') )
+        { return Parameter::getParamsInOnly(['name', 'colm.example']); }
     }
 
   }
 
   private function(Request $request)
-  { $this->setParamsIs($request->only('type', 'control', 'example')); }
+  { Parameter::setParamsIs($request->only('type', 'control', 'example')); }
 }
 ```
