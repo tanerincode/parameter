@@ -1,0 +1,15 @@
+{
+    "name": "tanerincode/parameter",
+    "description": "a parameter manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taner Tombas",
+            "email": "tombastaner@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.2.0",
+    }
+}
