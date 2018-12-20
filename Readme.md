@@ -5,7 +5,6 @@ If you are on Laravel 5.5, the package will automatically be loaded into the fra
 
 If you are Laravel version 5.0 - 5.4, add the service provider to config/app.php file:
 ```
-<?php
 ...
 'providers' => [
     ...
@@ -13,14 +12,11 @@ If you are Laravel version 5.0 - 5.4, add the service provider to config/app.php
     ...
 ],
 ...
-
 ```
 
 Usage
 
 ```
-<?php
-
 namespace Module\Example;
 
 use Module\Support\Trait\ParameterManager as PM;
