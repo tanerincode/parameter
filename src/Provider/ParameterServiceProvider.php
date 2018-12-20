@@ -1,6 +1,6 @@
 <?php
 
-namespace TanerInCode\Parameter\Providers;
+namespace TanerInCode\Parameter\Provider;
 
 use Illuminate\Support\ServiceProvider;
 
